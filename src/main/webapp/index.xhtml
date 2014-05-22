@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:free="http://java.sun.com/jsf/composite/free"
+	>
+<f:view contentType="text/html">
+	<h:head>
+	
+		<title>Untitled Document</title>
+		<ui:insert name="head"></ui:insert>
+	</h:head>
+
+	<h:body>
+	<h:outputText value="#{home.upload}"></h:outputText>
+	<h:form enctype="multipart/form-data"> 
+<free:upload>
+
+</free:upload>
+</h:form>
+	</h:body>
+</f:view>
+</html>
